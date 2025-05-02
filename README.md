@@ -1,4 +1,4 @@
-Simple Client-Server File Transfer
+# Simple Client-Server File Transfer
 
 ## Description
 
@@ -6,25 +6,39 @@ This project implements a simple client-server application in C++ that transfers
 
 ## Requirements
 
-- C++ compiler (e.g., g++)
+- C++ compiler (e.g., `g++`)
 - Boost.Asio library
 
 ## Building
 
 1. Install Boost.Asio (on Ubuntu/Debian):
-sudo apt-get install libboost-all-dev
+
+   ```bash
+   sudo apt-get install libboost-all-dev
+   ```
+
 2. Compile the server and client:
-g++ server.cpp -std=c++20 -o server -lboost_system -lpthread
-g++ client.cpp -std=c++20 -o client -lboost_system -lpthread
+
+   ```bash
+   g++ server.cpp -std=c++20 -o server -lboost_system -lpthread
+   g++ client.cpp -std=c++20 -o client -lboost_system -lpthread
+   ```
 
 ## Running
 
 1. Start the server:
-./server
+
+   ```bash
+   ./server
+   ```
+
 2. Run the client, providing the path to the file as an argument:
-./client path/to/file.txt
+
+   ```bash
+   ./client path/to/file.txt
+   ```
 
 ## Notes
 
 - The server saves the received file as `received_file`.
-- Communication happens over localhost on port 8080.
+- Communication happens over `localhost` on port `8080`.

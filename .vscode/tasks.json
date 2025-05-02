@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Client",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "client.cpp",
+                "-std=c++20",
+                "-o",
+                "client",
+                "-lboost_system",
+                "-lpthread"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Server",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "server.cpp",
+                "-std=c++20",
+                "-o",
+                "server",
+                "-lboost_system",
+                "-lpthread"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+# exe files
+server
+client
+received_file
+
+# vscode files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/c_cpp_properties.json
+
+# others
+*.o
+*.exe
+*.d
+
